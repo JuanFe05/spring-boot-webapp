@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${titulo}">Document</title>
+</head>
+<body>
+    
+    <h1 th:text="${titulo}"></h1>
+
+    <ul>
+        <li>
+            <a th:href="@{/variables/string/} + 'Hola a todos'">Hola a todos</a>
+        </li>
+
+        <li>
+            <a th:href="@{/variables/string/} + 'Spring Framework'">Spring Framework</a>
+        </li>
+
+        <li>
+            <a th:href="@{/variables/string/} + 'JAVA' + '/' + 7">JAVA</a>
+        </li>
+    </ul>
+
+</body>
+</html>
